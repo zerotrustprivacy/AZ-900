@@ -1,2 +1,2 @@
 # AZ-900
-Study Notes for my exam
+Study Notes for the Azure fundamentals exam
