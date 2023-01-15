@@ -1,48 +1,44 @@
 # AZ-900
 Study Notes for the Azure fundamentals exam
 <h1>Cloud Computing:</h1>
-
 <p>
   <ul>
 		 <li>The delivery of computing services over the internet. This includes infrastructure (VMs, storage, DBs, and networking) and IoT, ML, AI</li>
-		○ <li>Cloud helps to rapidly expand IT infrastructure</li>
+		<li>Cloud helps to rapidly expand IT infrastructure</li>
     </ul>
-	•<p> Shared Responsibility Model
-		○ <ul>
+	<p> Shared Responsibility Model
+		<ul>
       <li>Responsibilities get shared between the cloud provider and the consumer.</li>
-		○ <li>Physical security, power, cooling and network connectivity are the responsibility of the cloud provider.</li>
-		○ <li>The consumer is responsible for the data and info stored in the cloud</li>
-		○ <li>SaaS, PaaS, IaaS and ON-prem</li>
+		<li>Physical security, power, cooling and network connectivity are the responsibility of the cloud provider.</li>
+		<li>The consumer is responsible for the data and info stored in the cloud</li>
+		<li>SaaS, PaaS, IaaS and ON-prem</li>
       </ul></p>
-	•<p> Cloud models
-		○ <ul>
+	<p> Cloud models
+		<ul>
       <li>Private cloud: provides much greater control for the company and its IT department. Comes with greater cost and fewer benefits.</li>
-		○ <li>Public cloud: built, controlled and maintained by a 3rd party provider. Anyone that wants to purchase cloud services can access and use resources</li>
-		○ <li>Hybrid: both private and public clouds</li>
-		○<li> Multi-cloud: using multiple cloud providers</li>
-		○ </ul> </p>
+		<li>Public cloud: built, controlled and maintained by a 3rd party provider. Anyone that wants to purchase cloud services can access and use resources</li>
+		<li>Hybrid: both private and public clouds</li>
+		<li> Multi-cloud: using multiple cloud providers</li>
+		</ul> </p>
     <p><strong>Azure Arc</strong> - helps manage your cloud environment</p>
-	•<p> Consumption-Based model
-		○ <ul>
+	<p> Consumption-Based model
+		<ul>
       <li>CapEx - typically a one-time upfront expenditure to purchase or secure tangible resources. EX: building, parking lot, datacenter, company vehicle</li>
-		○ <li>OEx - spending money on services and products over time
+		<li>OEx - spending money on services and products over time
 			§ EX: cloud computing because it is consumption-based product. You pay for what you use.</li>
       </ul></p>
 
-	<p>The benefits of high availability and scalability
-		
+	<p>The benefits of high availability and scalability	
     <ol>
     <li>High availability: resources are available when needed, regardless of disruptions or events that may occur. Azure is a high availability cloud environment</li>
-		○ <li>Scalability: the ability to adjust resources to meet demand; keeps you from overpaying for services. Only pay for what you use.
+<li>Scalability: the ability to adjust resources to meet demand; keeps you from overpaying for services. Only pay for what you use.
 			§ Vertical scaling: an app needs more CPUs or RAM
 			§ Horizontal scaling: need additional VMs or containers</li>
-	•<li> Reliability and Predictability
-		○ Reliability: is the ability of a system to recover from failures and continue to function</li>
+	<li> <strong>Reliability and Predictability</strong>
+		Reliability: is the ability of a system to recover from failures and continue to function</li>
     </ul>
     </p>
-
 <h1> Compute and Networking</h1>
-<br>
 <h3>Azure Vms provide:</h3>
 <ul>
   <li>Total control over the Operating System</li>
@@ -51,7 +47,7 @@ Study Notes for the Azure fundamentals exam
   </ul>
   <p>You still have to update and maintain software that runs on the VM</p>
   <p>Single VMs or group VMS together for high availability/scalability/redundancy</p>
-  <p><strong>VM scale sets</strong> -create & manage a group of identical, load-balanced VMS
+  <p><strong>VM scale sets</strong> -create & manage a group of identical, load-balanced VMs
 Build large scale services for areas such as compute, bigdata, container workloads
 Centrally manage, configure & update VMS in minutes
 The # of VMs can increase or decrease in response to demand or you can set it to scale based on schedule
