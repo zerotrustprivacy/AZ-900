@@ -1,5 +1,6 @@
 # AZ-900
-Study Notes for the Azure fundamentals exam
+<h1>Study Notes for the Azure fundamentals exam</h1>
+<img src="SmartSelect_20230114_225928_Chrome.jpg">
 <h1>Cloud Computing:</h1>
 <p>
   <ul>
