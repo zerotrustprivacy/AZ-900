@@ -21,14 +21,14 @@ Study Notes for the Azure fundamentals exam
 		<li> Multi-cloud: using multiple cloud providers</li>
 		</ul> </p>
     <p><strong>Azure Arc</strong> - helps manage your cloud environment</p>
-	<p> Consumption-Based model
-		<ul>
-      <li>CapEx - typically a one-time upfront expenditure to purchase or secure tangible resources. EX: building, parking lot, datacenter, company vehicle</li>
+<p> Consumption-Based model
+<ul>
+     <li>CapEx - typically a one-time upfront expenditure to purchase or secure tangible resources. Example:building, parking lot, datacenter, company vehicle</li>
 		<li>OEx - spending money on services and products over time
 			§ EX: cloud computing because it is consumption-based product. You pay for what you use.</li>
       </ul></p>
 
-	<p>The benefits of high availability and scalability	
+<p>The benefits of high availability and scalability	
     <ol>
     <li>High availability: resources are available when needed, regardless of disruptions or events that may occur. Azure is a high availability cloud environment</li>
 <li>Scalability: the ability to adjust resources to meet demand; keeps you from overpaying for services. Only pay for what you use.
@@ -48,13 +48,14 @@ Study Notes for the Azure fundamentals exam
   <p>You still have to update and maintain software that runs on the VM</p>
   <p>Single VMs or group VMS together for high availability/scalability/redundancy</p>
   <p><strong>VM scale sets</strong> -create & manage a group of identical, load-balanced VMs
-Build large scale services for areas such as compute, bigdata, container workloads
-Centrally manage, configure & update VMS in minutes
-The # of VMs can increase or decrease in response to demand or you can set it to scale based on schedule
-    Auto deploys load balancers</p>
+<ul>
+<li>Build large scale services for areas such as compute, bigdata, container workloads</li>
+<li>Centrally manage, configure & update VMS in minutes</li>
+<li>The # of VMs can increase or decrease in response to demand or you can set it to scale based on schedule.Auto deploys load balancers</li>
+</ul></p>
   <p><strong>VM availability sets</strong> update domain groups that can be rebooted at the same time
 Only one update domain group will be offline at a time. 30 min recovery time before update
-• Fault domain groups Hour VMS by common power source and network switch. By default there are Z
+Fault domain groups your VMs by common power source and network switch.</p>
 <p>When to use VMS:
   <ul>
     <li>Testing and Development</li>
