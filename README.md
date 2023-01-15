@@ -1,6 +1,25 @@
 # AZ-900
 <h1>Study Notes for the Azure fundamentals exam</h1>
 <img src="SmartSelect_20230114_225928_Chrome.jpg">
+<h1>Azure Architecture</h1>
+<p>Azure Accounts</p>
+<ul>
+<li>You need an Azure subscription to use Azure services.</li>
+<li>Azure free account: gives you access to popular products for a year. You need a credit card, phone number and a Microsoft/Github account.</li>
+<li>Azure free student account: First 12 months free and free access to developer tools.</li>
+<li>Physical Infrastructure starts with the datacenter. Datacenters are grouped into Azure Regions and Availability Zones. </li>
+<li><strong>REGION</strong> is a geographical area that contains at least one datacenter. Azure controls the resources within each regions.</li>
+<li><strong>Availability Zones</strong> are physically separated datacenters within an Azure region. Made up of one of more datacenters. An availability is set up as an isolation boundary; if one zone goes down, the other continues working.</li>
+<li>Availability zones are primarily for VMs, managed disks, load balancers and SQL databases. Azure services that support availability zones: Zonal services, Zone-redundant services, Non-regional services</li>
+<li><strong>Region pairs:</strong>Azure regions are paired with another region within the same geography at least 300 miles away. This allows for the replication of resources across a geography that helps reduce the likelihood of interruptions because of events such as natural disasters, civil unrest, power outages, or physical network outages.</li>
+<li><strong>Sovereign Regions:</strong> For compliance or legal purposes such as US DoD Central, US Gov Virginia, US Gov Iowa, etc. China East, China North and more.</li>
+<li><strong>Azure resources and resource groups:</strong> A resource is the basic building of Azure. Resource groups provide a way to group resources together. One action applied, will go to all resources within the group. If you delete a group, all resources will be deleted.</li>
+<li><strong>Azure subscriptions:</strong>Subscriptions are a unit of management, billing, and scale. (Billing boundary & Access control boundary). An account can have multiple subscriptions but it's only required to have one. </li>
+<li><strong>Azure management groups:</strong>provide a level of scope above subscriptions. Organize subscriptions into containers and apply governance conditions to the management groups.Management groups could create a hierarchy that applies a policy and provide user access to multiple subscriptions.</li>
+</ul>
+<p></p>
+<h1></h1>
+<h1></h1>
 <h1>Cloud Computing:</h1>
 <p>
   <ul>
@@ -104,5 +123,11 @@ Ms or containers.
     <li>Supports public and private endpoints for external and internal resources</li>
     </p>
 <p><li>3 mechanisms to achieve connectivity: Point-to-site net private connections
-  From outside to internal site-to-site</li></p>
-</ul>
+  From outside to internal site-to-site</li>
+  </ul></p>
+  
+  <h3>Azure Virtual Private Networks</h3>
+  <ul><p>
+  <li><strong>VPN gateways</strong> is a type of virtual network gateway. Connect on-premises datacenters to virtual networks through a site-to-site connection, connect individual devices to virtual networks through a point to point connection, connect virtual networks to other virtual networks through a network-to-network connection.</li>
+  <li>There are 2 types of VPNs to how traffic should be encrypted: <strong>(1)Policy-based VPN gateways</strong> specifically the IP address of packets that should be encrypted through each tunner; this evaluates every data packet against those sets of IP addresses to choose the tunnel where that packet is going to be sent through.<strong>(2)In Route-based gateways</strong>, IPSec tunnels are modeled as network interfece or virtual tunnel interface. IP routing decides which one of these tunnel interfaces to use when sending each packet. Route-based VPNs are the preferred connection method for on-premises devices (more resilient to topology changes)</li>
+</ul></p>
