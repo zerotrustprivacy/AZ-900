@@ -244,10 +244,40 @@ Resource health - tailored view of your actual Azure resources. Provides info ab
 <li>Application Insights - monitors your web apps. Monitors request rates, response times, failures, page views , user and session counts, dependency rates</li>
 </ul></p>
 
-
+<h2>Azure Storage</h2>
 <p>
 <ul>
-<li></li></ul></p>
+<li>storage accounts provide a unique namespace For your Azure Storage data from anywhere in the world.
+First you determine the storage account type. The type of account determines redundancy options
+	Ø Locally redundant storage (LRS)- lowest-cost redundancy and the least durability, better option is ZRS
+	Ø Geo-Redundant storage (GRS) - copies data within a primary region using LRS to a single physical location
+	Ø Read-access geo- redundant storage (RA-GRS)
+	Ø Zone-redundant storage (ZRS) - accessible for both read and write if a zone becomes unavailable,  use in the primary region for high avail.
+	Ø Geo_zone-redundant storage (GZRS) - replicated data is READ-ONLY when failover is from primary to secondary region, highest degree of durability
+	Ø Read-access geo-zone- redundant storage (RA-GZRS)</li>
+<li>Data in an Azure Storage account is always replicated 3 times in the primary region.
+2 options for replication: LRS and ZRS</li>
+<li>	Storage Types: 
+	Standard general - purpose V2
+	Premium block blobs - Blob Storage
+	Premium file share - Azure files
+	Premium page blubs- Page blobs only</li>
+<li>Azure storage services: 
+	Ø Azure blobs - massively scalable object store for text and binary data
+	Ø Azure files - managed file shares for cloud or on-premises deployments
+	Ø Azure queues- messaging store for reliable messaging between application components
+	Ø Azure disks- block level Storage volumes for Azure VMs
+</li>
+<li>Benefits of Azure Storage - Durable and highly available, secure, scalable, managed, accessible</li>
+<li>Blobs are ideal for: serving images or documents directly to a browser, staring files for distributed access, Streaming video and audio, storing data for backup& recovery. Blob storage can be accessed from anywhere in the world Via HTTP or HTTPS. <strong>Blob storage tiers</strong> - Hot access, Cool access, Archive access</li>
+<li>Azure Migrate - helps you migrate from on-prem to the cloud. Unified migration platform, range of tools, assessment t migration
+	Ø Azure Data Box is a physical migration service that helps transfer large amounts of data (larger than 40 TBs ) in a quick inexpensive, disaster recover, migrate back to on-prem or to another cloud service provider
+</li>
+<li>File Movement Options
+	Ø AzCopy - CMD utility that you can use to copy blobs or files to or from your storage account. Move files back and forth between clouds
+	Ø Azure Storage Explorer - standalone app that provides a graphical interface to manage files and blobs in your Azure storage account. uses AZCOPY to perform all of the file and blob management tasks
+	Ø Azure File sync- a tool that lets you centralize your file shares in Azure Files. Use any Protocol available on Windows ( SMB, NFS, FTPS)</li>
+</ul></p>
 
 <p>
 <ul>
