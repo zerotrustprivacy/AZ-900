@@ -131,3 +131,157 @@ Ms or containers.
   <li><strong>VPN gateways</strong> is a type of virtual network gateway. Connect on-premises datacenters to virtual networks through a site-to-site connection, connect individual devices to virtual networks through a point to point connection, connect virtual networks to other virtual networks through a network-to-network connection.</li>
   <li>There are 2 types of VPNs to how traffic should be encrypted: <strong>(1)Policy-based VPN gateways</strong> specifically the IP address of packets that should be encrypted through each tunner; this evaluates every data packet against those sets of IP addresses to choose the tunnel where that packet is going to be sent through.<strong>(2)In Route-based gateways</strong>, IPSec tunnels are modeled as network interfece or virtual tunnel interface. IP routing decides which one of these tunnel interfaces to use when sending each packet. Route-based VPNs are the preferred connection method for on-premises devices (more resilient to topology changes)</li>
 </ul></p>
+
+<h2>Azure Identity, Access and Security</h2>
+<p>
+<ul>
+<li>Azure AD enables you to sign in and access both Microsoft cloud apps and cloud apps thatyou develop. Also helps you maintain your on-prem AD deployment. On-prem uses AD running on Windows for IAM. Azure AD is cloud-based IAM.  When you connect AD with Azure AD, Microsoft can help you protect sign- in attempts.
+
+Azure AD is used for: IT admins, App developers, Users, online service subscribers
+</li>
+<li>Azure AD Connect helps with connecting on-prem AD to AAD.</li>
+<li>Azure ADDS - provides managed domain services such as domain join, group policy, LDAP, and Kerberos/NTLM authentication. Domain services without the need to deploy, manage, and patch domain controllers in the cloud. Lets you run legacy apps in the clund that can't use modern auth methods. Integrates with your existing Azure AD tenant.
+	•  Unique namespace used as the domain name..
+	• 2 Windows Server domain controllers are then deployed into your Aure region (replica set)
+Azure handles the DCs.</li>
+</ul></p>
+
+<h2>Authentication Methods</h2>
+<p>
+<ul>
+<li>Single Sign-on (SS0) - enables a user to sign in onetime and use that credential to access multiple resources and applications from different providers. Only one ID and one Password. Access across apps is granted to a single identity. Reduces the effort to change or disable accounts. </li>
+<li> MFA - prompting a user for an extra form of ID. MFA helps protect against a password compromise in situations where password was compromised. 
+	<p><ul><li>Something you know - challenge question</li>
+		<li>Something you have - code</li>
+		<li>Something you are  - biometrics</li></ul></p>
+<li>Passwordless Auth -  password is removed and replaced with something you have, plus something you are or something you know. Needs to be registered on the device before it can work. Once you provide surething you know or are (PIN or biometrics). 
+		○ Azure AD: Windows Hello for Business, Microsoft authenticator app, FIDO2 security keys</li>
+</ul></p>
+
+
+<h2>Azure External Identities</h2>
+<p>
+<ul>
+<li>Business to business collab (B2B) - collab with external users by letting them use their preferred identity to sign-in your Microsoft apps or other enterprise apps (SaaS apps, custom developed apps, etc)</li>
+<li>B2B direct connect- establish a mutual . two-way trust with another Azure AD org for seamless collab. Supports Teams shared channels </li>
+<li>Azure AD B2C - publish modern SaaS apps or custom developed apps to consumers and customers</li>
+</ul></p>
+
+<p>
+<ul>
+<li>Azure conditional access - used to allow or deny access to resources based on who the user is, where they are, what device they're requesting access from. Conditional access also provides more granular MFA for users.</li>
+<li>Azure RBAC is applied to a scope (resource or set of resources that this access applies to)
+Scope includes: management group, single subscription, resource group, single resource.
+RBAC is hierarchical - What's applied to the parent, also applies to all child scopes. Ex: Owner role assigned to user at the management group scope, user manages everything in all subscriptions within the management group
+	- uses an "allow" model. When you're assigned a rule, Azure RBAC allows you to perform actions within the scope of that role</li>
+<li>Zero Trust Model  - security model that assumes the worst case scenario and protects resources with that expectation. Zero trust assumes breach at the outset and then verifies each request as though it Originated from an uncontrolled network. Requires everyone to authenticate.
+	- Verify explicitly
+	- Use least privilege access
+	- Assume breach
+</li>
+<li>Defense in Depth 
+	- Layers :
+		○ Physical  - 1st line of defense, datacenter
+		○ Identity & Access  - infrastructure; 
+		○ Perimeter  - DDOS protection to filter large scale attacks BEFORE they can cause issues for users; network based attacks
+		○ Network - limits communication between resources through segmentation and access controls
+		○ Compute - secure VMs and implement endpoint protection
+		○ Application - reduce Vulnerabilities, Store sensitive app secrets in a secure storage medium
+		○ Data - control access to data and ensure it's properly protected</li>
+	</ul></p>
+
+<h2>Azure for Governance and Compliance</h2>
+<p>
+<ul>
+<li>Azure Blueprints - standardize cloud subscriptions or environment deployments. Define repeatable settings and policies that are applied as new subscriptions are created. Artifacts are the components of blueprints. Artifacts are not required.
+	• Artifacts include: Role assignments, Policy assignments, ARM templates, Resource groups
+	• Blueprints are version-able allowing you to make updates later on and assign a new version.
+</li>
+<li>Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resource Azure Policy enables you to define both indiv policies and groups of related Policy. Policies are inherited so if you set a policy at a high level, Will automatically be applied to all of the groupings that fall within the parent. If you set an Azure Policy on a resource group, all resources are created within that resource group automatically.
+
+Azure Policy comes with built-in policy & initiative definitions
+
+Policy integrate with AzureDevOps by applying any continuous integration and delivery pipeline policies that pertain to the pre-deployment and post deployment phases of your applications
+
+
+Policy initiatives - a way of grouping related policies together.
+</li>
+<li>Resource locks prevent resources from being accidentally deleted or changed
+	• 2 types: Delete and Read Only
+Manage resource locks from the portal, Powershell, CLI or from an ARM template</li>
+<li>Service Trust Portal - provides access to various content, tools and other resources about Microsoft security, privacy and compliance practices. You must sign in as an authenticated user with your Microsoft cloud services account (Azure AD org account)
+	• Service Trust Portal
+	• My Library - save documents to quickly access them on your My Library page
+All Documents- single page for documents on the service trust porta</li>
+</ul></p>
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+<p>
+<ul>
+<li></li></ul></p>
+
+<p>
+<ul>
+<li></li></ul></p>
+
+<p>
+<ul>
+<li></li></ul></p>
+
+<p>
+<ul>
+<li></li></ul></p>
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+<p>
+<ul>
+<li></li></ul></p>
+
+
+
+<p>
+<ul>
+<li></li></ul></p>
