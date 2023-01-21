@@ -215,16 +215,34 @@ Manage resource locks from the portal, Powershell, CLI or from an ARM template</
 All Documents- single page for documents on the service trust porta</li>
 </ul></p>
 
-
+<h2>Managing and Deploying Azure ARM templates</h2>
 <p>
 <ul>
-<li></li></ul></p>
+<li>ARM is the deployment and management service for Azure. It enables you to create, update and delete resources in your Azure account.</li>
+
+<li>ARM allows you to: 
+	• Manage your infrastructure through declarative templates rather than scripts. JSON File that defines what you want to deploy to Azure
+	• Deploy manage and monitor all resources for your solution as a group
+	• Apply tags to resources to logically organize all the resources
+	• Define the dependencies between resources</li>
+<li>ARM templates manage your infrastructure as lines of code. The template orchestrates the creation of other resources in parallel.
+	• Benefits: Declarative syntax, Repeatable results, orchestration, modular files, extensibility</li>
+</ul></p>
 
 
-
+<h2>Monitoring Tools in Azure</h2>
 <p>
 <ul>
-<li></li></ul></p>
+<li>Azure advisor evaluates Azure resources and makes recommendations to help improve reliability, security and performance.  Designed to help you save time on cloud optimization</li>
+<li>Azure Service Health - helps you manage your infrastructure needs, reach customers, innovate and adapt rapidly. 
+	• Azure Status- broad pic of the Status of Azure globally
+	• Service Health- provides a more specific view of Azure services and regions. It focuses on the Azure services and regions you're using. Best place to look for service impacting communications about outages, planned maintenance activities, etc
+Resource health - tailored view of your actual Azure resources. Provides info about indiv cloud resources</li>
+<li>Azure Monitor - collects data on your resources, analyzing data, visualizing the info and even acting on the results. Monitor Azure resources, on-prem, and multi-cloud</li>
+<li>Azure Log Analytics- the tool in theportal where you'll write and run log queries on the data gathered by Azure Monitor Log Analytics is a tool that supports both simple, complex queries and data analysis. Sort, filter and analyze the records.</li>
+<li>Azure Monitor Alerts - an automated way to Stay informed. Set the alert conditions, notification actions, Azure Monitor Alerts notifies when an alert is triggered</li>
+<li>Application Insights - monitors your web apps. Monitors request rates, response times, failures, page views , user and session counts, dependency rates</li>
+</ul></p>
 
 
 <p>
