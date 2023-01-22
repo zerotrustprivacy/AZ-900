@@ -122,8 +122,15 @@ Ms or containers.
       connect nets]</li>
     <li>Supports public and private endpoints for external and internal resources</li>
     </p>
-<p><li>3 mechanisms to achieve connectivity: Point-to-site net private connections
-  From outside to internal site-to-site</li>
+<p><li>3 mechanisms to achieve connectivity: (1) Point-to-site net private connections
+  rom outside to internal site-to-site
+  (2)	• site to site vnet link your on-prem VPN device or gateway to the Azure VPN gateway in a vnet. Devices appear to be on the local network.
+ (3) Azure Express Route- allows you to extend your on-prem networks into Microsoft Azure over a private connection. Express Route Circuit is the connection. Allows you to connect offices, data centers, or other Facilities. Dynamic routing via BGP for redundancy </li></p>
+ <li> Azure DNS - hosting service for DNS domains that provide name resolution by using Microsoft Azure infrastructure. Provides resiliency and high availability. Based on Arm For RBAC to control access.  Manage domains and records w/ the portal, PowerShell, CLI. Supports private DNS domains. Use alias records to refer to an Azure resource. </li>
+ <li> Route tables allow you to define rules about how traffic Should be directed. user-defined routes control routing tables between subnets within a vnet or between vnets for greater traffic control </li>
+ <li>Network security groups (NSGs) contain inbound & outbound Security rules. Allow or block traffic </li >
+<li> Vnet peering - two vnets connect directly to each other. Network traffic is private, resources in the Vnet can communicate with each other
+ </li>
   </ul></p>
   
   <h3>Azure Virtual Private Networks</h3>
